@@ -1,0 +1,161 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  color: rgba(0, 140, 180, 0.9);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.pre {
+  padding: 2px;
+  background: rgba(0, 140, 180, 0.2);
+}
+
+.highlight {
+  border: 1px solid rgba(0, 140, 180, 0.9);
+  border-radius: 5px;
+  padding-left: 15px;
+  background: rgba(0, 140, 180, 0.2);
+}
+
+.simple {
+  border: 1px solid rgba(0, 140, 180, 0.4);
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  /*   width: 300px; */
+  overflow: visible;
+}
+
+.simple dt {
+  flex: 0 0 10%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.simple dd {
+  margin-left: auto;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 0 0 90%;
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(0, 140, 180, 0.4);
+  padding: 5px;
+}
+
+th {
+  text-align: left;
+  background: rgba(0, 140, 180, 0.4);
+  color: white;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid 1px;
+  border-color: rgba(0, 140, 180, 0.4);
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: rgba(0, 140, 180, 0.4);
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar li:hover {
+  background: rgba(0, 140, 180, 0.4);
+  transition: background 0.5s;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: rgba(0, 140, 180, 0.9);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  color: white;
+  transition: color 0.1s;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+#navbar header {
+  color: rgba(0, 140, 180, 0.9);
+  margin: 30px;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  font-weight: bold;
+  border-top: 1px solid rgba(0, 140, 180, 0.4);
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid rgba(140, 140, 180, 0.9);
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 290px;
+  }
+}
